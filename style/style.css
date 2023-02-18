@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 10px 10px 0 10px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav>ul>li>a:hover {
+    background: #6464e0;
+    border-radius: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.p1 {
+    font-weight: 900;
+}
+
+.h1 {
+    font-weight: 900;
+}
+
+.p2 {
+    color: #c5c559;
+    font-weight: 900;
+}
+
+.p3,
+.p5 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+hr {
+    margin: 0 auto;
+    border: none;
+    background-color: blue;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.hr2 {
+    margin: 0 auto;
+    border: none;
+    background-color: blue;
+    width: 120px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main2-card1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.p4 {
+    text-align: center;
+}
+
+img[alt="menu"] {
+    margin: 10px 0 0 10px;
+    width: 20px;
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    nav>ul {
+        display: none;
+    }
+
+    img[alt="menu"] {
+        display: block;
+    }
+
+    .main,
+    .main-left-side,
+    .main-right-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-right-side-img {
+        width: 60vw;
+    }
+
+    .main2-card1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    img[alt="project-image"]{
+        width: 55vw;
+    }
+}
